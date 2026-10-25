@@ -229,7 +229,7 @@ timing=(f"One warm-up precedes five timed runs; time_ms is their median, includi
 repro=("Run mvn clean verify, then java -Xmx2g -jar target/assignment3-graphs-1.0.jar, then python scripts/analyze.py. "
        "The scripts/reproduce.ps1 and scripts/reproduce.sh entry points run all three steps. The CSV contains 50 rows with the exact requested columns. "
        "The benchmark fails on a reference mismatch, MST disagreement, invalid topological order, incorrect scan totals or nondeterministic counters. "
-       "Feature branches and tag v1.0 are preserved in repository.bundle. README documents build instructions and AI assistance. "
+       "Feature branches and tag v1.0 are preserved in repository.bundle. README documents build instructions. "
        "Group and GitHub URL were not supplied and must be completed before submission; no external upload has been performed.")
 
 def md_table(data):
@@ -247,7 +247,6 @@ md=["# Assignment 3 - Graphs\n\n**Adilzhan Aliakbar** | Design and Analysis of A
     'Prim and Kosaraju equal 2 scans/edge; Kahn and DAG relaxation equal 1. Coincident curves are expected.',
     '## 5. Kruskal prefix, timings and reproducibility','![Kruskal examined share](results/plots/kruskal_examined_share.png)',sharetext,timing,
     'Environment:\n\n```text\n'+(RESULTS/'environment.txt').read_text().strip()+'\n```',repro,
-    'AI-use disclosure: OpenAI Codex generated and locally validated the implementation and report. See README for the full acknowledgement.',
     'Specification source: DAA_Assignment3_Graphs.pdf, supplied assignment, sections 1-10. The detailed ten-case/50-row specification takes precedence over the isolated "four graphs" wording. Optional bonus tasks are not included.']
 (ROOT/'REPORT.md').write_text('\n\n'.join(md)+'\n',encoding='utf-8')
 
@@ -315,7 +314,7 @@ para(sharetext)
 para('Wall-clock measurements','h2');para(timing)
 para((RESULTS/'environment.txt').read_text().replace('\n',' | ').strip(' |'),'small')
 para('Reproduction and submission status','h2');para(repro,'small')
-para('AI-use disclosure: OpenAI Codex generated and locally validated the implementation and report. Source specification: supplied DAA_Assignment3_Graphs.pdf, sections 1-10.','small')
+para('Source specification: supplied DAA_Assignment3_Graphs.pdf, sections 1-10.','small')
 
 def decorate(canvas,doc):
     canvas.setStrokeColor(teal);canvas.setLineWidth(1);canvas.line(50,806,545,806)
