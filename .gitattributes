@@ -1,0 +1,6 @@
+* text=auto
+*.pdf binary
+*.png binary
+*.jar binary
+*.bundle binary
+*.sh text eol=lf
