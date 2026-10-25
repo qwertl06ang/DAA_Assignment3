@@ -1,0 +1,131 @@
+{
+  "fit": "ordinary least squares: ln(counter) = intercept + slope * ln(n); five sizes per density",
+  "slopes": {
+    "Kruskal": {
+      "sparse": {
+        "edge_scans": 1.05500251082575,
+        "comparisons": 1.1054947092418905
+      },
+      "dense": {
+        "edge_scans": 1.119420822596835,
+        "comparisons": 1.0868258429081865
+      }
+    },
+    "Prim": {
+      "sparse": {
+        "edge_scans": 1.0,
+        "comparisons": 1.1091239326785163
+      },
+      "dense": {
+        "edge_scans": 1.0,
+        "comparisons": 1.0903953927411376
+      }
+    },
+    "Kosaraju": {
+      "sparse": {
+        "edge_scans": 1.0
+      },
+      "dense": {
+        "edge_scans": 1.0
+      }
+    },
+    "Kahn": {
+      "sparse": {
+        "edge_scans": 1.0
+      },
+      "dense": {
+        "edge_scans": 1.0
+      }
+    },
+    "DagShortestPath": {
+      "sparse": {
+        "edge_scans": 1.0
+      },
+      "dense": {
+        "edge_scans": 1.0
+      }
+    }
+  },
+  "normalized_ranges": [
+    [
+      "Kruskal",
+      "comparisons / (E log2 E)",
+      "0.896 - 0.949",
+      "0.922 - 0.953"
+    ],
+    [
+      "Kruskal",
+      "dsu_ops / E",
+      "2.290 - 2.748",
+      "0.565 - 0.894"
+    ],
+    [
+      "Prim",
+      "comparisons / (E log2 E)",
+      "1.831 - 1.946",
+      "1.826 - 1.892"
+    ],
+    [
+      "Kosaraju",
+      "scans / (V + E)",
+      "1.600",
+      "1.905"
+    ],
+    [
+      "Kahn",
+      "scans / (V + E)",
+      "0.800",
+      "0.952"
+    ],
+    [
+      "DAG paths",
+      "scans / (V + E)",
+      "0.800",
+      "0.952"
+    ]
+  ],
+  "tests": [
+    {
+      "name": "tests.DsuTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "tests.GeneratorTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "tests.GraphTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "tests.MstTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "tests.PathsTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "tests.SccTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ]
+}

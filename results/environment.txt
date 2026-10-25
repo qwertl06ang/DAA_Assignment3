@@ -1,0 +1,6 @@
+Java: 26.0.2.1+1-7
+VM: OpenJDK 64-Bit Server VM
+OS: Windows 11 amd64
+Processors: 12
+Warmups: 1 per algorithm/graph; timed runs: 5; statistic: median
+Seed: new Random(42) per graph

@@ -1,0 +1,7 @@
+tests.DsuTest: tests=2, failures=0, errors=0, skipped=0
+tests.GeneratorTest: tests=1, failures=0, errors=0, skipped=0
+tests.GraphTest: tests=2, failures=0, errors=0, skipped=0
+tests.MstTest: tests=4, failures=0, errors=0, skipped=0
+tests.PathsTest: tests=3, failures=0, errors=0, skipped=0
+tests.SccTest: tests=3, failures=0, errors=0, skipped=0
+TOTAL: 15 tests, 0 failures, 0 errors, 0 skipped
