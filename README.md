@@ -1,7 +1,7 @@
 # Assignment 3 - Graphs: DSU, MST, SCC and Shortest Paths
 
 **Student:** Adilzhan Aliakbar  
-**Group:** not provided - add your group before submission.  
+**Group:** SE-2521  
 **GitHub repository:** https://github.com/qwertl06ang/DAA_Assignment3  
 **Release:** `main`, tag `v1.0`.
 
@@ -91,13 +91,4 @@ git branch feature/paths origin/feature/paths
 git branch feature/metrics origin/feature/metrics
 ```
 
-For an empty GitHub repository you own, replace `YOUR_USERNAME/YOUR_REPOSITORY` below with its actual location:
 
-```sh
-git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
-git push origin feature/dsu feature/mst feature/scc feature/paths feature/metrics
-git push origin v1.0
-```
-
-Add your group and GitHub link above, commit the updated README and submit the final files in `DAA_Assignment3_Adilzhan_Aliakbar_YOUR_GROUP.zip` through Moodle. If you change the submitted release, update the release tag to the final submitted commit before publishing it. The project files are published at the GitHub repository linked above. The included repository.bundle preserves the original Git history, branches and v1.0 tag. No Moodle submission was made.
